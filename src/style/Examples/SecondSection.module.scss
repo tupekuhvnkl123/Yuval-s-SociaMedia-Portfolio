@@ -1,2 +1,14 @@
+@import "../global/index.scss";
+
 .secondSection {
+  @include section;
+  height: 75dvh;
+  margin-top: 120px;
+}
+
+.examplesList {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  max-width: 100%;
 }

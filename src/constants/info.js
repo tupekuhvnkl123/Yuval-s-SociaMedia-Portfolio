@@ -17,21 +17,25 @@ export const whyInfo = {
 
 export const examplesFirstSectionInfo = [
   {
-    srcUrl: "",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/mgeasmybfec5ykaxugdh",
     title: "animals1Video",
   },
   {
-    srcUrl: "",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/nm9jz3pr5r8upqkhaae8",
     title: "iceCreamVideo",
   },
   {
-    srcUrl: "",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/jz9iep8bizj8op79alhv",
     title: "wedding1Video",
   },
 ];
 export const examplesSecondSectionInfo = [
   {
-    srcUrl: "",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/norppmra6xhta0aoxpac",
     title: "animals3Video",
   },
   {
@@ -39,16 +43,19 @@ export const examplesSecondSectionInfo = [
     title: "wedding2Video",
   },
   {
-    srcUrl: "",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/tm5tn8ikb3plfhgxmapf",
     title: "meatVideo",
   },
   {
-    srcUrl: "",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/eln7almhpqmgoxztodya",
     title: "animals2Video",
   },
 
   {
-    srcUrl: "",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/uxgyes2eiizcigz8qd8p",
     title: "bookVideo",
   },
 ];

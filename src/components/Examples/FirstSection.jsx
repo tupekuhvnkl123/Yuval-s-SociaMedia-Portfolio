@@ -5,9 +5,15 @@ import ExampleItem from "./ExampleItem";
 const FirstSection = () => {
   return (
     <section className={classes.firstSection}>
-      {examplesFirstSectionInfo.map(({ video, title }) => (
-        <ExampleItem key={title} video={video} title={title} />
-      ))}
+      <div className={classes.container}>
+        <span className={classes.title}>Examples</span>
+
+        <ul className={classes.examplesList}>
+          {examplesFirstSectionInfo.map(({ srcUrl, title }) => (
+            <ExampleItem key={title} video={srcUrl} title={title} />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

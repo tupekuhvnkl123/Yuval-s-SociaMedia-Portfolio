@@ -1,13 +1,15 @@
 import { examplesSecondSectionInfo } from "../../constants/info";
 import ExampleItem from "./ExampleItem";
-import classes from "../../style/Examples/FirstSection.module.scss";
+import classes from "../../style/Examples/SecondSection.module.scss";
 
 const SecondSection = () => {
   return (
     <section className={classes.secondSection}>
-      {examplesSecondSectionInfo.map(({ video, title }) => (
-        <ExampleItem key={title} video={video} title={title} />
-      ))}
+      <ul className={classes.examplesList}>
+        {examplesSecondSectionInfo.map(({ srcUrl, title }) => (
+          <ExampleItem key={title} video={srcUrl} title={title} />
+        ))}
+      </ul>
     </section>
   );
 };
