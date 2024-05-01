@@ -1,0 +1,47 @@
+@mixin section() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  // padding: clamp(20px, 5vw, 100px); //!
+  padding: 50px;
+  max-width: 1800px;
+  margin: auto;
+
+  @media (max-width: $media-breakpoint) {
+    flex-direction: column-reverse;
+    padding: 50px 0;
+  }
+}
+
+@mixin title() {
+  color: $title-color;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin secondaryTitle($fontWeight: 600) {
+  color: $title-color;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: $fontWeight;
+  font-style: normal;
+}
+
+@mixin text() {
+  // font-size: $fontSize;
+  color: $text-color;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin titleUnderline {
+  border: none;
+  width: 100px;
+  height: 3px;
+  background-color: $title-color;
+  border-radius: 5px;
+}

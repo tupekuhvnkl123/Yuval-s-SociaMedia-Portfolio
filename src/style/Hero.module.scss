@@ -1,0 +1,67 @@
+@import "./global/index.scss";
+
+.hero {
+  @include section;
+  column-gap: clamp(20px, 5vw, 100px);
+  // column-gap: 100px; //!
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    // height: 100%; //!
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+
+  .title {
+    @include title;
+    font-weight: 500;
+    font-size: clamp(50px, 7vw, 130px);
+  }
+  .profession {
+    @include secondaryTitle;
+    font-size: clamp(14px, 1.8vw, 25px);
+  }
+  .basedIn {
+    @include secondaryTitle(400);
+    font-size: clamp(14px, 1.8vw, 25px);
+  }
+}
+
+@media (max-width: $media-breakpoint) {
+  .hero {
+    column-gap: 0;
+  }
+  .imageContainer {
+    height: 70%;
+
+    img {
+      border-radius: 5px;
+      max-width: 400px;
+      width: 85%;
+    }
+  }
+
+  .infoContainer {
+    height: 30%;
+    align-items: center;
+  }
+}
