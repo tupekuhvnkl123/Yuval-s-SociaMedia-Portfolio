@@ -13,6 +13,7 @@ const ExampleItem = ({ title, video }) => {
           className={videoActive ? classes.active : ""}
           src={video}
           controls
+          autoFocus={false}
         />
       </div>
       <p>{title}</p>
