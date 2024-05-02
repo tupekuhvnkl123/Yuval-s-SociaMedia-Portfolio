@@ -10,11 +10,28 @@ body {
   background-color: $background-color;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background-color: $secondary-background-color;
+}
 
+body::-webkit-scrollbar-thumb {
+  background-color: rgba($title-color, 0.8);
+}
 a {
   text-decoration: none;
 }
 
 li {
   list-style: none;
+}
+
+@media (max-width: $media-breakpoint) {
+  body::-webkit-scrollbar,
+  body::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-track {
+    display: none;
+  }
 }

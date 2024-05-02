@@ -19,44 +19,45 @@ export const examplesFirstSectionInfo = [
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/mgeasmybfec5ykaxugdh",
-    title: "animals1Video",
+    title: "Animals I",
   },
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/nm9jz3pr5r8upqkhaae8",
-    title: "iceCreamVideo",
+    title: "La Goffre",
   },
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/jz9iep8bizj8op79alhv",
-    title: "wedding1Video",
+    title: "Wedding I",
   },
 ];
 export const examplesSecondSectionInfo = [
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/norppmra6xhta0aoxpac",
-    title: "animals3Video",
+    title: "Animals II",
   },
   {
-    srcUrl: "",
-    title: "wedding2Video",
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/fngwsdlnnniqcyufwpgj",
+    title: "Wedding II",
   },
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/tm5tn8ikb3plfhgxmapf",
-    title: "meatVideo",
+    title: "Meat IL",
   },
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/eln7almhpqmgoxztodya",
-    title: "animals2Video",
+    title: "Animals III",
   },
 
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/uxgyes2eiizcigz8qd8p",
-    title: "bookVideo",
+    title: "Book",
   },
 ];
 

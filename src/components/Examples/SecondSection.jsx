@@ -5,11 +5,13 @@ import classes from "../../style/Examples/SecondSection.module.scss";
 const SecondSection = () => {
   return (
     <section className={classes.secondSection}>
-      <ul className={classes.examplesList}>
-        {examplesSecondSectionInfo.map(({ srcUrl, title }) => (
-          <ExampleItem key={title} video={srcUrl} title={title} />
-        ))}
-      </ul>
+      <div className={classes.container}>
+        <ul className={classes.examplesList}>
+          {examplesSecondSectionInfo.map(({ srcUrl, title }) => (
+            <ExampleItem key={title} video={srcUrl} title={title} />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
