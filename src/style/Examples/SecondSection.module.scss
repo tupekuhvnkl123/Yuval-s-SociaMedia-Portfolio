@@ -27,3 +27,12 @@
     row-gap: 100px;
   }
 }
+@media (max-width: 700px) {
+  .secondSection {
+    padding-top: 0;
+  }
+  .examplesList {
+    padding: 0 5px;
+    row-gap: 50px;
+  }
+}
