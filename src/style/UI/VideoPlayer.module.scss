@@ -45,7 +45,7 @@
   transition: all 0.1s ease-out;
 }
 
-.paused {
+.hideTimeAndVolume {
   opacity: 0;
 }
 .player:hover .timeAndVolume {
@@ -76,7 +76,7 @@
     border-radius: 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
-  .paused:after {
+  .hideCurrentTimeDot:after {
     display: none;
   }
 }

@@ -75,13 +75,13 @@ const VideoPlayer = ({ src, onPlay, onPause, className, poster }) => {
       </button>
       <div
         className={`${classes.timeAndVolume} ${
-          !isPlaying ? classes.paused : ""
+          !isPlaying ? classes.hideTimeAndVolume : ""
         }`}
       >
         <div className={classes.time} onClick={handleProgressClick}>
           <div
             className={`${classes.currentTime} ${
-              !isPlaying ? classes.paused : ""
+              !isPlaying ? classes.hideCurrentTimeDot : ""
             }`}
             style={{ width: `${timePercentage}%` }}
           />
