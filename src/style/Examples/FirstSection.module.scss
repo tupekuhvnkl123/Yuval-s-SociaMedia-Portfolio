@@ -31,13 +31,7 @@
 
 @media (max-width: 1350px) {
   .examplesList {
-    column-gap: 3%;
+    column-gap: 1.5%;
     padding: 0 5px;
-  }
-}
-
-@media (max-width: 500px) {
-  .examplesList {
-    max-height: 320px;
   }
 }

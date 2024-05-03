@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "../../style/Examples/ExampleItem.module.scss";
+import VideoPlayer from "../UI/VideoPlayer";
 
 const ExampleItem = ({ title, video }) => {
   const [videoActive, setVideoActive] = useState(false);
@@ -7,13 +8,11 @@ const ExampleItem = ({ title, video }) => {
   return (
     <div className={classes.exampleItem}>
       <div className={classes.videoContainer}>
-        <video
+        <VideoPlayer
           onPlay={() => setVideoActive(true)}
           onPause={() => setVideoActive(false)}
           className={videoActive ? classes.active : ""}
           src={video}
-          controls
-          autoFocus={false}
         />
       </div>
       <p>{title}</p>

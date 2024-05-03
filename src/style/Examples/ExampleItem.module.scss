@@ -29,16 +29,11 @@
 
 @media (max-width: 1350px) {
   .exampleItem {
-    max-width: 31%;
+    max-width: 32%;
     video {
       height: 100%;
       max-width: 100%;
       width: auto;
     }
-  }
-}
-@media (max-width: 500px) {
-  .exampleItem video {
-    max-height: 300px;
   }
 }
