@@ -5,7 +5,7 @@ import { HiOutlineVolumeOff } from "react-icons/hi";
 import { IoIosPlay } from "react-icons/io";
 import { IoIosPause } from "react-icons/io";
 
-const VideoPlayer = ({ src, onPlay, onPause, className }) => {
+const VideoPlayer = ({ src, onPlay, onPause, className, poster }) => {
   const [isMuted, setIsMuted] = useState(false);
   const [timePercentage, setTimePercentage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -63,17 +63,14 @@ const VideoPlayer = ({ src, onPlay, onPause, className }) => {
         ref={videoRef}
         src={src}
         muted={isMuted}
+        poster={poster}
         playsInline
       />
       <button className={classes.playButton} onClick={handlePlayPause}>
-        {videoRef.current ? (
-          videoRef.current.paused ? (
-            <IoIosPlay className={classes.playIcon} />
-          ) : (
-            <IoIosPause className={classes.playIcon} />
-          )
-        ) : (
+        {!isPlaying ? (
           <IoIosPlay className={classes.playIcon} />
+        ) : (
+          <IoIosPause className={classes.playIcon} />
         )}
       </button>
       <div

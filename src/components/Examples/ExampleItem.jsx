@@ -2,7 +2,7 @@ import { useState } from "react";
 import classes from "../../style/Examples/ExampleItem.module.scss";
 import VideoPlayer from "../UI/VideoPlayer";
 
-const ExampleItem = ({ title, video }) => {
+const ExampleItem = ({ title, video, poster }) => {
   const [videoActive, setVideoActive] = useState(false);
 
   return (
@@ -13,6 +13,7 @@ const ExampleItem = ({ title, video }) => {
           onPause={() => setVideoActive(false)}
           className={videoActive ? classes.active : ""}
           src={video}
+          poster={poster}
         />
       </div>
       <p>{title}</p>

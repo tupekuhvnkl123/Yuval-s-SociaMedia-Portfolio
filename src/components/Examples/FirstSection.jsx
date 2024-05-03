@@ -9,8 +9,13 @@ const FirstSection = () => {
         <span className={classes.title}>Examples</span>
 
         <ul className={classes.examplesList}>
-          {examplesFirstSectionInfo.map(({ srcUrl, title }) => (
-            <ExampleItem key={title} video={srcUrl} title={title} />
+          {examplesFirstSectionInfo.map(({ srcUrl, title, poster }) => (
+            <ExampleItem
+              key={title}
+              video={srcUrl}
+              title={title}
+              poster={poster}
+            />
           ))}
         </ul>
       </div>
