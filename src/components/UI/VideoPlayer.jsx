@@ -84,7 +84,7 @@ const VideoPlayer = ({ src, onPlay, onPause, className }) => {
         <div className={classes.time} onClick={handleProgressClick}>
           <div
             className={`${classes.currentTime} ${
-              videoRef.current?.paused ? classes.paused : ""
+              !isPlaying ? classes.paused : ""
             }`}
             style={{ width: `${timePercentage}%` }}
           />
