@@ -8,6 +8,8 @@ import { IoIosPause } from "react-icons/io";
 const VideoPlayer = ({ src, onPlay, onPause, className }) => {
   const [isMuted, setIsMuted] = useState(false);
   const [timePercentage, setTimePercentage] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+
   const videoRef = useRef(null);
 
   const handleToggleMute = () => {
@@ -17,8 +19,10 @@ const VideoPlayer = ({ src, onPlay, onPause, className }) => {
   const handlePlayPause = () => {
     if (videoRef.current.paused) {
       videoRef.current.play();
+      setIsPlaying(true);
     } else {
       videoRef.current.pause();
+      setIsPlaying(false);
     }
   };
 
@@ -59,6 +63,7 @@ const VideoPlayer = ({ src, onPlay, onPause, className }) => {
         ref={videoRef}
         src={src}
         muted={isMuted}
+        playsInline
       />
       <button className={classes.playButton} onClick={handlePlayPause}>
         {videoRef.current ? (
@@ -71,10 +76,16 @@ const VideoPlayer = ({ src, onPlay, onPause, className }) => {
           <IoIosPlay className={classes.playIcon} />
         )}
       </button>
-      <div className={classes.timeAndVolume}>
+      <div
+        className={`${classes.timeAndVolume} ${
+          !isPlaying ? classes.paused : ""
+        }`}
+      >
         <div className={classes.time} onClick={handleProgressClick}>
           <div
-            className={classes.currentTime}
+            className={`${classes.currentTime} ${
+              videoRef.current?.paused ? classes.paused : ""
+            }`}
             style={{ width: `${timePercentage}%` }}
           />
         </div>
