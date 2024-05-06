@@ -31,7 +31,7 @@
   justify-content: center;
   flex: 1;
   height: 100%;
-
+  position: relative;
   .title {
     @include title;
     font-weight: 500;
@@ -45,6 +45,29 @@
     @include secondaryTitle(400);
     font-size: clamp(14px, 1.8vw, 25px);
   }
+}
+.instagramContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  // background-color: #6C685D;
+  background-color: $title-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  .icon {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    width: 35px;
+    color: white;
+  }
+}
+.instagramContainer:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: $media-breakpoint) {
@@ -64,5 +87,12 @@
   .infoContainer {
     height: 30%;
     align-items: center;
+  }
+  .instagramContainer {
+    position: static;
+    margin-top: 15px;
+    .icon {
+      width: 25px;
+    }
   }
 }

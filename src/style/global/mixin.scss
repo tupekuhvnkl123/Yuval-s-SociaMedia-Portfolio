@@ -14,8 +14,13 @@
   }
 }
 
-@mixin title() {
-  color: $title-color;
+@mixin title($light: false) {
+  @if $light {
+    color: $background-color;
+  } @else {
+    color: $title-color;
+  }
+
   font-family: "Forum", serif;
   font-style: normal;
 }
@@ -28,19 +33,27 @@
   font-style: normal;
 }
 
-@mixin text() {
-  // font-size: $fontSize;
-  color: $text-color;
+@mixin text($light: false) {
+  @if $light {
+    color: $background-color;
+  } @else {
+    color: $text-color;
+  }
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin titleUnderline {
+@mixin titleUnderline($light: false) {
+  @if $light {
+    background-color: $background-color;
+  } @else {
+    background-color: $title-color;
+  }
   border: none;
   width: 100px;
   height: 3px;
-  background-color: $title-color;
+
   border-radius: 5px;
 }

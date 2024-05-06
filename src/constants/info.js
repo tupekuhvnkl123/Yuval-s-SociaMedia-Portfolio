@@ -10,9 +10,37 @@ export const heroInfo = {
 };
 export const aboutInfo = {
   image: aboutImage,
+  name: "Yuval Cohen",
 };
 export const whyInfo = {
   image: whyImage,
+};
+
+export const historyInfo = {
+  cards: [
+    {
+      title: "Army",
+      years: "2017-2019",
+      text: "I served in the IDF's Yamas unit, gaining skills in teamwork, adaptability, and quick decision-making. This experience instilled discipline and a commitment to achieving goals, which I apply in my professional life.",
+    },
+    {
+      title: "Today",
+      years: "2024",
+      text: "I served in the IDF's Yamas unit, gaining skills in teamwork, adaptability, and quick decision-making. This experience instilled discipline and a commitment to achieving goals, which I apply in my professional life.",
+    },
+  ],
+  languages: ["Hebrew", "English"],
+  skills: [
+    "Manages tasks effectively",
+    "Clear and effective communicator",
+    "Takes ownership",
+    "Committed to ethics and compliance",
+    "Ensures accuracy and quality",
+    "Meets deadlines consistently",
+    "Works well in teams",
+    "Finds creative solutions",
+    "Flexibly adjusts to changes",
+  ],
 };
 
 export const examplesFirstSectionInfo = [

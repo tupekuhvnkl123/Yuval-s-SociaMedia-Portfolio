@@ -4,9 +4,20 @@
   @include section;
   // column-gap: clamp(20px, 5vw, 100px);
   // column-gap: 100px; //!
+  padding-top: 0;
+}
+.pageSeparateLine {
+  background-color: $decoration-color;
+  border: none;
+  height: 3px;
+  border-radius: 5px;
+  width: 89%;
+  max-width: 1800px;
+  margin: auto;
+  margin-top: 50px;
 }
 
-.imageContainer {
+.imageAndNameContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,18 +25,29 @@
   height: 100%;
   width: 100%;
   // padding-right: clamp(20px, 5vw, 100px);
-
+}
+.imageAndName {
+  transform: translateX(clamp(-20px, -5vw, -100px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: $decoration-color;
+  padding: 20px 20px 30px 20px;
   img {
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
     object-position: center;
     width: 350px;
-    border: 3px $secondary-background-color solid; //!
-    padding: 10px; //!
-    border-radius: 5px;
-    transform: translateX(clamp(-20px, -5vw, -100px));
-    // height: 100%; //!
+    border-radius: 2.5px;
+  }
+  .name {
+    @include text;
+    font-weight: 450;
+    margin-top: 20px;
+    font-size: clamp(23px, 5vw, 33px);
   }
 }
 
@@ -63,8 +85,12 @@
   .about {
     height: auto;
   }
-  .imageContainer {
+  .imageAndNameContainer {
     height: 50%;
+  }
+  .imageAndName {
+    background-color: transparent;
+    padding: 0;
     img {
       padding: 10px;
       border-radius: 100%;
@@ -72,6 +98,11 @@
       max-height: none;
       width: 400px;
       margin-top: 35px;
+      border: 4px $decoration-color solid;
+      padding: 10px;
+    }
+    .name {
+      margin-top: 5px;
     }
   }
 
@@ -88,7 +119,7 @@
   }
 }
 @media (max-width: 650px) {
-  .imageContainer {
+  .imageAndNameContainer {
     img {
       aspect-ratio: 1 / 1;
       height: auto;

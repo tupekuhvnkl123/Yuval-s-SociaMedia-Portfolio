@@ -1,5 +1,8 @@
 @import "./global/index.scss";
 
+.background {
+  background-color: $secondary-background-color;
+}
 .why {
   @include section;
 }
@@ -38,7 +41,7 @@
 .textContainer {
   position: relative;
   .text {
-    @include text;
+    @include text("light");
     max-width: 80%;
     font-size: clamp(16px, 3vw, 25px);
   }
@@ -49,12 +52,12 @@
   flex-direction: column;
   row-gap: 10px;
   .title {
-    @include title;
+    @include title("light");
     font-weight: 500;
     font-size: clamp(45px, 6vw, 80px);
   }
   hr {
-    @include titleUnderline;
+    @include titleUnderline("light");
   }
 }
 
