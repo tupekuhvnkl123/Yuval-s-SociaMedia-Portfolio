@@ -161,7 +161,7 @@
 @media (max-width: $media-breakpoint) {
   .topCards {
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 100px;
   }
   .cardsContainer .linesCube {
     border: none;

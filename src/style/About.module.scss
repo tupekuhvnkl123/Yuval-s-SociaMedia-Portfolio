@@ -1,5 +1,9 @@
 @import "./global/index.scss";
 
+.container {
+  position: relative;
+}
+
 .about {
   @include section;
   // column-gap: clamp(20px, 5vw, 100px);
@@ -15,6 +19,19 @@
   max-width: 1800px;
   margin: auto;
   margin-top: 50px;
+}
+.firstStars {
+  position: absolute;
+  height: 70px;
+  top: 20%;
+  right: 15%;
+}
+.secondStars {
+  position: absolute;
+  height: 70px;
+  bottom: 15%;
+  right: 5%;
+  transform: rotate(5deg);
 }
 
 .imageAndNameContainer {
@@ -81,9 +98,24 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .firstStars {
+    right: 10%;
+  }
+}
+
 @media (max-width: $media-breakpoint) {
   .about {
     height: auto;
+  }
+  .firstStars {
+    height: 60px;
+    top: 5%;
+    right: 5%;
+  }
+  .secondStars {
+    height: 60px;
+    bottom: 10%;
   }
   .imageAndNameContainer {
     height: 50%;
@@ -127,5 +159,11 @@
       width: 350px;
       transform: none;
     }
+  }
+  .firstStars {
+    height: 45px;
+  }
+  .secondStars {
+    height: 45px;
   }
 }

@@ -1,11 +1,21 @@
 import { aboutInfo } from "../constants/info";
 import classes from "../style/About.module.scss";
+import shiningStars from "../assets/shiningStars.svg";
 
 const About = () => {
   return (
     <div className={classes.container}>
       <hr className={classes.pageSeparateLine} />
-
+      <img
+        className={classes.firstStars}
+        src={shiningStars}
+        alt="shiningStars"
+      />
+      <img
+        className={classes.secondStars}
+        src={shiningStars}
+        alt="shiningStars"
+      />
       <section className={classes.about}>
         <div className={classes.imageAndNameContainer}>
           <div className={classes.imageAndName}>
