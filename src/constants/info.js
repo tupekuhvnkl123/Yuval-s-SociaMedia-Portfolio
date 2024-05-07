@@ -7,6 +7,7 @@ export const heroInfo = {
   profession: "SOCIAL MEDIA MARKETING",
   basedIn: "Based in Israel, Tel Aviv",
   image: heroImage,
+  instagramLink: "https://www.instagram.com/yuco_media",
 };
 export const aboutInfo = {
   image: aboutImage,
@@ -21,12 +22,12 @@ export const historyInfo = {
     {
       title: "Army",
       years: "2017-2019",
-      text: "I served in the IDF's Yamas unit, gaining skills in teamwork, adaptability, and quick decision-making. This experience instilled discipline and a commitment to achieving goals, which I apply in my professional life.",
+      text: "I served as a 'Discipline Non-Commissioned Officer' at the 'HaKirya' military base. I was responsible for overseeing the behavior, ensuring compliance with regulations, and ensuring tasks were completed on time by the soldiers.",
     },
     {
       title: "Today",
       years: "2024",
-      text: "I served in the IDF's Yamas unit, gaining skills in teamwork, adaptability, and quick decision-making. This experience instilled discipline and a commitment to achieving goals, which I apply in my professional life.",
+      text: "I work independently in the Nails and Eyebrows Manicure field. In 2023, I started a PPC course at the 'Habetzefer' academy, and after 7 months, I transitioned to the Social Media Manager course. Today, I successfully created content for four companies.",
     },
   ],
   languages: ["Hebrew", "English"],
@@ -47,7 +48,7 @@ export const examplesFirstSectionInfo = [
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/mgeasmybfec5ykaxugdh",
-    title: "Animals I",
+    title: "Pet Store I",
     poster:
       "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/animals1",
   },
@@ -70,7 +71,7 @@ export const examplesSecondSectionInfo = [
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/norppmra6xhta0aoxpac",
-    title: "Animals II",
+    title: "Pet Store II",
     poster:
       "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/animals2",
   },
@@ -91,7 +92,7 @@ export const examplesSecondSectionInfo = [
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/eln7almhpqmgoxztodya",
-    title: "Animals III",
+    title: "Pet Store III",
     poster:
       "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/animals3",
   },

@@ -12,7 +12,10 @@ const Hero = () => {
         <span className={classes.title}>{heroInfo.name}</span>
         <p className={classes.profession}>{heroInfo.profession}</p>
         <p className={classes.basedIn}>{heroInfo.basedIn}</p>
-        <div className={classes.instagramContainer}>
+        <div
+          className={classes.instagramContainer}
+          onClick={() => window.open(heroInfo.instagramLink, "_blank")}
+        >
           <FaInstagram className={classes.icon} />
         </div>
       </div>
