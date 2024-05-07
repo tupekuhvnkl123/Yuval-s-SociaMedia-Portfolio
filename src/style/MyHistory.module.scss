@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 110dvh;
+  min-height: 110dvh;
   padding: 50px;
   max-width: 1200px;
   margin: auto;
@@ -26,6 +26,17 @@
   align-items: center;
   justify-content: center;
   row-gap: 100px;
+  position: relative;
+  .linesCube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid $decoration-color;
+    height: 85%;
+    width: 55%;
+    z-index: -1;
+  }
 }
 
 .topCards {
@@ -90,7 +101,7 @@
 .languagesAndSkills {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 30px 40px;
   border-radius: 5px;
   background-color: $decoration-color;
   min-height: 250px;
@@ -133,17 +144,57 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  row-gap: 20px;
+  row-gap: 15px;
 }
 .skills {
   display: flex;
   flex-wrap: wrap;
-  //   column-gap: 20px;
   row-gap: 5px;
 
   li {
     flex-basis: 50%;
     flex-shrink: 0;
     flex-grow: 0;
+  }
+}
+
+@media (max-width: $media-breakpoint) {
+  .topCards {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .cardsContainer .linesCube {
+    border: none;
+    width: 2px;
+    background-color: $decoration-color;
+  }
+  .languagesAndSkills {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    max-width: 500px;
+    min-height: 250px;
+    width: 100%;
+    row-gap: 40px;
+  }
+  .languagesContainer,
+  .skillsContainer {
+    row-gap: 30px;
+    align-items: center;
+  }
+
+  .languages {
+    row-gap: 5px;
+    align-items: center;
+  }
+  .skills {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills li {
+    font-size: 14px;
   }
 }

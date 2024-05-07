@@ -38,6 +38,7 @@ const MyHistory = () => {
             </ul>
           </div>
         </div>
+        <div className={S.linesCube} />
       </div>
     </section>
   );
