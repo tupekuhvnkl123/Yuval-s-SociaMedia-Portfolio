@@ -65,7 +65,6 @@ const VideoPlayer = ({ src, onPlay, onPause, className, poster }) => {
         muted={isMuted}
         poster={poster}
         playsInline
-        autoPlay={true}
       />
       <button className={classes.playButton} onClick={handlePlayPause}>
         {!isPlaying ? (
