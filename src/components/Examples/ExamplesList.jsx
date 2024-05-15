@@ -1,15 +1,14 @@
-import classes from "../../style/Examples/FirstSection.module.scss";
-import { examplesFirstSectionInfo } from "../../constants/info";
+import classes from "../../style/Examples/ExamplesList.module.scss";
 import ExampleItem from "./ExampleItem";
 
-const FirstSection = () => {
+const ExamplesList = ({ examples, title }) => {
   return (
     <section className={classes.firstSection}>
       <div className={classes.container}>
-        <span className={classes.title}>Examples</span>
+        {title && <span className={classes.title}>Examples</span>}
 
         <ul className={classes.examplesList}>
-          {examplesFirstSectionInfo.map(({ srcUrl, title, poster }) => (
+          {examples.map(({ srcUrl, title, poster }) => (
             <ExampleItem
               key={title}
               video={srcUrl}
@@ -23,4 +22,4 @@ const FirstSection = () => {
   );
 };
 
-export default FirstSection;
+export default ExamplesList;

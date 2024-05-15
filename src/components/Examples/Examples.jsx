@@ -1,11 +1,14 @@
-import FirstSection from "./FirstSection";
-import SecondSection from "./SecondSection";
+import ExamplesList from "./ExamplesList";
+import {
+  examplesFirstSectionInfo,
+  examplesSecondSectionInfo,
+} from "../../constants/info";
 
 const Examples = () => {
   return (
     <>
-      <FirstSection />
-      <SecondSection />
+      <ExamplesList examples={examplesFirstSectionInfo} title />
+      <ExamplesList examples={examplesSecondSectionInfo} />
     </>
   );
 };

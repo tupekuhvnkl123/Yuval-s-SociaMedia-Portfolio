@@ -41,7 +41,6 @@
   flex: 1;
   height: 100%;
   width: 100%;
-  // padding-right: clamp(20px, 5vw, 100px);
 }
 .imageAndName {
   transform: translateX(clamp(-20px, -5vw, -100px));
@@ -123,6 +122,7 @@
   .imageAndName {
     background-color: transparent;
     padding: 0;
+    transform: none;
     img {
       padding: 10px;
       border-radius: 100%;
@@ -151,13 +151,12 @@
   }
 }
 @media (max-width: 650px) {
-  .imageAndNameContainer {
+  .imageAndName {
     img {
       aspect-ratio: 1 / 1;
       height: auto;
       max-width: 80%;
       width: 350px;
-      transform: none;
     }
   }
   .firstStars {

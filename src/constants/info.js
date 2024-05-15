@@ -47,10 +47,10 @@ export const historyInfo = {
 export const examplesFirstSectionInfo = [
   {
     srcUrl:
-      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/mgeasmybfec5ykaxugdh",
-    title: "Pet Store I",
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/edj3dcmm9i6jymerfeq5",
+    title: "Adiva Studio",
     poster:
-      "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/animals1",
+      "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/AdivaStudio",
   },
   {
     srcUrl:
@@ -68,20 +68,6 @@ export const examplesFirstSectionInfo = [
   },
 ];
 export const examplesSecondSectionInfo = [
-  {
-    srcUrl:
-      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/norppmra6xhta0aoxpac",
-    title: "Pet Store II",
-    poster:
-      "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/animals2",
-  },
-  {
-    srcUrl:
-      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/fngwsdlnnniqcyufwpgj",
-    title: "Wedding II",
-    poster:
-      "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/wedding2",
-  },
   {
     srcUrl:
       "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/tm5tn8ikb3plfhgxmapf",
@@ -103,10 +89,17 @@ export const examplesSecondSectionInfo = [
     poster:
       "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/book",
   },
+  {
+    srcUrl:
+      "https://res.cloudinary.com/dnxqlkwvr/video/upload/f_auto:video,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/mgeasmybfec5ykaxugdh",
+    title: "Pet Store I",
+    poster:
+      "https://res.cloudinary.com/dnxqlkwvr/image/upload/f_auto,q_auto/v1/Yuval's%20SocialMedia%20Portfolio/animals1",
+  },
 ];
 
 export const footerInfo = {
-  phone: "050-898-8512",
-  email: "yuval@gmail.com",
+  phone: "050-443-3690",
+  email: "yuvalke656@gmail.com",
   location: "Israel, Tel Aviv",
 };
