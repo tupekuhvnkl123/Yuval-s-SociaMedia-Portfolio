@@ -8,7 +8,7 @@ const LanguagesMenu = () => {
   const { hebrew, setHebrew } = useContext(LanguagesContext);
 
   return (
-    <div className={S.container}>
+    <div className={`${S.container} ${hebrew ? S.hebrew : ""}`}>
       <button className={S.languagesBtn} onClick={() => setShowMenu((p) => !p)}>
         <span>{hebrew ? "שפות" : "Languages"}</span>
         <IoLanguageOutline className={S.languagesIcon} />

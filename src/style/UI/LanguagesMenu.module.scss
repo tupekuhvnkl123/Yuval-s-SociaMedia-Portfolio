@@ -61,6 +61,9 @@
   .container {
     // position: fixed;
     top: -10px;
+    right: -20vw;
+  }
+  .container.hebrew {
     right: -30vw;
   }
   .languagesBtn {
@@ -73,13 +76,25 @@
     }
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .container {
+    right: -10vw;
+  }
+  .container.hebrew {
     right: -25vw;
   }
 }
+@media (max-width: 450px) {
+  .container {
+    right: 0;
+  }
+}
+
 @media (max-width: 360px) {
   .container {
+    // right: -20vw;
+  }
+  .container.hebrew {
     right: -20vw;
   }
 }
