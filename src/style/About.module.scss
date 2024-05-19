@@ -25,7 +25,12 @@
   height: 70px;
   top: 20%;
   right: 15%;
+
+  &.hebrew {
+    right: 40%;
+  }
 }
+
 .secondStars {
   position: absolute;
   height: 70px;
@@ -78,8 +83,19 @@
 
   .text {
     @include text;
+
     max-width: 650px;
     font-size: clamp(16px, 3vw, 25px);
+  }
+}
+
+.infoContainer.hebrew {
+  .titleContainer {
+    align-items: end;
+    max-width: 650px;
+  }
+  .text {
+    text-align: right;
   }
 }
 
@@ -111,6 +127,9 @@
     height: 60px;
     top: 5%;
     right: 5%;
+    &.hebrew {
+      right: 5%;
+    }
   }
   .secondStars {
     height: 60px;
@@ -148,6 +167,15 @@
   }
   .titleContainer {
     align-items: center;
+  }
+
+  .infoContainer.hebrew {
+    .titleContainer {
+      align-items: center;
+    }
+    .text {
+      text-align: center;
+    }
   }
 }
 @media (max-width: 650px) {

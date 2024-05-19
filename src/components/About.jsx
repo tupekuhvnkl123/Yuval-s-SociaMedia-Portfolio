@@ -1,13 +1,17 @@
-import { aboutInfo } from "../constants/info";
+import { aboutInfo } from "../constants/info.jsx";
 import classes from "../style/About.module.scss";
 import shiningStars from "../assets/shiningStars.svg";
+import { useContext } from "react";
+import { LanguagesContext } from "../context/LanguagesContext.jsx";
 
 const About = () => {
+  const { hebrew } = useContext(LanguagesContext);
+
   return (
     <div className={classes.container}>
       <hr className={classes.pageSeparateLine} />
       <img
-        className={classes.firstStars}
+        className={`${classes.firstStars} ${hebrew ? classes.hebrew : ""}`}
         src={shiningStars}
         alt="shiningStars"
       />
@@ -19,24 +23,23 @@ const About = () => {
       <section className={classes.about}>
         <div className={classes.imageAndNameContainer}>
           <div className={classes.imageAndName}>
-            <img src={aboutInfo.image} alt={"name"} />
-            <p className={classes.name}>{aboutInfo.name}</p>
+            <img src={aboutInfo.image} alt={aboutInfo.name.english} />
+            <p className={classes.name}>
+              {hebrew ? aboutInfo.name.hebrew : aboutInfo.name.english}
+            </p>
           </div>
         </div>
-        <div className={classes.infoContainer}>
+        <div
+          className={`${classes.infoContainer} ${hebrew ? classes.hebrew : ""}`}
+        >
           <div className={classes.titleContainer}>
-            <span className={classes.title}>About Me</span>
+            <span className={classes.title}>
+              {hebrew ? "קצת עליי" : "About Me"}
+            </span>
             <hr />
           </div>
           <p className={classes.text}>
-            I&apos;m Yuval Cohen, 25, from Ramat Gan. My dream has always been
-            to uplift businesses with potential and showcase their uniqueness.
-            <br />
-            <br />I create and manage content across various areas including
-            food, beauty, animals, and more. From videos to user-generated
-            content (UGC) and images, I aim to elevate businesses and maximize
-            their reach. Let&apos;s work together to make your business known
-            and talked about by everyone.
+            {hebrew ? aboutInfo.text.hebrew : aboutInfo.text.english}
           </p>
         </div>
       </section>

@@ -15,13 +15,12 @@
   width: 100%;
 
   img {
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 90%;
+    max-width: 75%;
     object-fit: cover;
     object-position: center;
     width: 100%;
-    border-radius: 30px; //!
-    // height: 100%; //!
+    border-radius: 30px;
   }
 }
 
@@ -32,6 +31,7 @@
   flex: 1;
   height: 100%;
   position: relative;
+  row-gap: 10px;
   .title {
     @include title;
     font-weight: 500;
@@ -39,18 +39,26 @@
   }
   .profession {
     @include secondaryTitle;
-    font-size: clamp(14px, 1.8vw, 25px);
+    font-size: clamp(13px, 1.8vw, 20px);
   }
   .basedIn {
     @include secondaryTitle(400);
-    font-size: clamp(14px, 1.8vw, 25px);
+    font-size: clamp(14px, 1.8vw, 20px);
   }
 }
+.infoContainer.hebrew {
+  align-items: center;
+  .title,
+  .profession,
+  .basedIn {
+    letter-spacing: 1px;
+  }
+}
+
 .instagramContainer {
   position: absolute;
   bottom: 0;
   right: 0;
-  // background-color: #6C685D;
   background-color: $title-color;
   display: flex;
   align-items: center;
@@ -71,6 +79,13 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 1250px) {
+  .imageContainer img {
+    max-height: 95%;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: $media-breakpoint) {
   .hero {
     column-gap: 0;
@@ -81,6 +96,7 @@
     img {
       // border-radius: 5px; //!
       max-width: 400px;
+      max-height: 100%;
       width: 85%;
     }
   }
@@ -88,6 +104,7 @@
   .infoContainer {
     height: 30%;
     align-items: center;
+    text-align: center;
   }
   .instagramContainer {
     position: static;

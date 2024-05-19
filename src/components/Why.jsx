@@ -1,36 +1,29 @@
+import { useContext } from "react";
+import { LanguagesContext } from "../context/LanguagesContext";
 import { whyInfo } from "../constants/info";
-import classes from "../style/Why.module.scss";
+import S from "../style/Why.module.scss";
 
 const Why = () => {
+  const { hebrew } = useContext(LanguagesContext);
+
   return (
-    <div className={classes.background}>
-      <section className={classes.why}>
-        <div className={classes.infoContainer}>
-          <div className={classes.titleContainer}>
-            <span className={classes.title}>Why Social</span>
+    <div className={S.background}>
+      <section className={S.why}>
+        <div className={`${S.infoContainer} ${hebrew ? S.hebrew : ""}`}>
+          <div className={S.titleContainer}>
+            <span className={S.title}>
+              {hebrew ? "? למה סושיאל" : "Why Social"}
+            </span>
             <hr />
           </div>
-          <div className={classes.textContainer}>
-            <p className={classes.text}>
-              I chose Social Media Marketing because I believe in the power of
-              digital platforms to connect brands with their audience in
-              meaningful ways. <br />
-              <br />
-              My passion lies in crafting compelling narratives, engaging
-              content, and strategic campaigns that drive results. Clients
-              should choose me because I bring a creative yet data-driven
-              approach, staying updated with the latest trends and algorithms to
-              ensure maximum impact. <br />
-              <br />
-              With a track record of delivering measurable success and a
-              dedication to understanding each client&apos;s unique goals, I
-              strive to be a valuable partner in achieving marketing objectives
-              and fostering lasting relationships with audiences.
+          <div className={S.textContainer}>
+            <p className={S.text}>
+              {hebrew ? whyInfo.text.hebrew : whyInfo.text.english}
             </p>
-            <div className={classes.mediaBackground} />
+            <div className={S.mediaBackground} />
           </div>
         </div>
-        <div className={classes.imageContainer}>
+        <div className={S.imageContainer}>
           <img src={whyInfo.image} alt={"name"} />
         </div>
       </section>

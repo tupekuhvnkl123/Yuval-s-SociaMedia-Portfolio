@@ -1,0 +1,75 @@
+@import "../global/index.scss";
+
+.container {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+.languagesBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  span {
+    @include title;
+    font-size: 18px;
+    font-weight: 450;
+  }
+
+  .languagesIcon {
+    color: $title-color;
+    font-size: 20px;
+  }
+}
+
+.menu {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  height: 70px;
+  width: 70px;
+  margin-top: 12px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  transition: all 0.2s ease-in-out;
+  background-color: $background-color;
+
+  p {
+    @include title;
+    cursor: pointer;
+  }
+  p:hover {
+    text-decoration: underline;
+  }
+}
+.menu.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: $media-breakpoint) {
+  .container {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  .languagesBtn {
+    span {
+      font-size: 15px;
+    }
+
+    .languagesIcon {
+      font-size: 18px;
+    }
+  }
+}
