@@ -92,6 +92,7 @@
   }
   .imageContainer {
     height: 70%;
+    margin-bottom: -20px;
 
     img {
       // border-radius: 5px; //!
@@ -103,6 +104,7 @@
 
   .infoContainer {
     height: 30%;
+    width: 100%;
     align-items: center;
     text-align: center;
   }
