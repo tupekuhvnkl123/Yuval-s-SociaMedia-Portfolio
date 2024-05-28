@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import LanguagesMenu from "./UI/LanguagesMenu";
 import { useContext } from "react";
 import { LanguagesContext } from "../context/LanguagesContext";
+import { BsFileEarmarkPerson } from "react-icons/bs";
 
 const Hero = () => {
   const { hebrew } = useContext(LanguagesContext);
@@ -25,11 +26,27 @@ const Hero = () => {
         <p className={classes.basedIn}>
           {hebrew ? heroInfo.basedIn.hebrew : heroInfo.basedIn.english}
         </p>
-        <div
-          className={classes.instagramContainer}
-          onClick={() => window.open(heroInfo.instagramLink, "_blank")}
-        >
-          <FaInstagram className={classes.icon} />
+        <div className={classes.socialIcons}>
+          <a
+            href={
+              hebrew
+                ? "./YuvalCohenCV-Hebrew.pdf"
+                : "./YuvalCohenCV-English.pdf"
+            }
+            download={
+              hebrew ? "YuvalCohenCV-Hebrew.pdf" : "YuvalCohenCV-English.pdf"
+            }
+          >
+            <div className={classes.iconContainer}>
+              <BsFileEarmarkPerson className={classes.icon} />
+            </div>
+          </a>
+          <div
+            className={classes.iconContainer}
+            onClick={() => window.open(heroInfo.instagramLink, "_blank")}
+          >
+            <FaInstagram className={classes.icon} />
+          </div>
         </div>
         <LanguagesMenu />
       </div>
